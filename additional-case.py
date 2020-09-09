@@ -165,33 +165,8 @@ def pagerank(mat,v,v0,a):
         #print("try1111111",r_V_exp)
         final=Process_to_output(v)
         
-        #v=Nor_vector(v)
-        '''s=float(0)
-        for i in range(len(v)):
-            s+=v[i]
-        for i in range(len(v)):
-            v[i]=v[i]/s'''
-        #print(v)
-        #print(distance)
-        '''for i in range(len(distance)):
-            if abs(v[i]-distance[i])>0.0000001:
-
-                print(abs(v[i]-distance[i]))
-                flag=1
-        if flag==0:
-            print(k)
-            break'''
-        #distance=v[:]
-        #print(v)
-        #print("try1111111",r_V_exp)
-        #v_final=Process_to_output(v)
-        #r_V_final=Process_to_output(r_V)
-        '''for i in range(37):
-            if i==36:
-                f_conver_data.write(str(round(r_V_final[i][0],6))+'\n')
-            else:
-                f_conver_data.write(str(round(r_V_final[i][0],6))+' ')'''
-        #print(k,":::::",r_D_final)
+       
+        
         final.sort()
         final.reverse()
         print(k,":::::")
@@ -199,50 +174,7 @@ def pagerank(mat,v,v0,a):
         print(final)
         print("////////////////////////")
 def main():
-    #mat, adj=construct_matrix('toplogy.txt',19,19)
-   # W_DV=construct_matrix("DV(exp).txt",19,37)
     
-    #W_DD=construct_matrix("toplogy.txt",19,19)
-
-    #print(W_DD)
-    #for i in range(14):
-    #    W_DD[18][i]=0
-    #W_D=W_DD.T
-    #print(W_D)
-    '''print(W_VD)
-    print(W_DV)'''
-    #print(W_DD)
-    #r_D=[float(1/19) for i in range(19)]
-    #r_V=r_D
-    
-    '''W_DD=np.zeros((7, 7), dtype = np.float)  # init W_DD
-    W_DD[0][2]=1
-    W_DD[0][4]=2
-    W_DD[0][3]=1
-    W_DD[0][5]=1
-    W_DD[2][0]=1
-    W_DD[2][1]=1
-    W_DD[5][3]=1
-    W_DD[0][6]=2
-    
-    W_DV=np.zeros((7, 13), dtype = np.float)  # init W_DV
-    W_DV[0][0]=10.0
-    W_DV[0][1]=10.0
-    W_DV[0][2]=3.9
-    W_DV[1][3]=8.6
-    W_DV[2][4]=10.0
-    W_DV[2][5]=10.0
-    W_DV[2][6]=10.0
-    W_DV[3][7]=8.0
-    W_DV[4][8]=10.0
-    W_DV[4][9]=10.0
-    W_DV[4][10]=10.0
-    W_DV[6][11]=10.0
-    W_DV[5][12]=4.9
-
-    init_D=[1/7,1/7,1/7,1/7,1/7,1/7,1/7] #init_D
-    init_V=[6.4,6.4,6.9,10.0,6.9,10.0,6.4,10.0,10.0,2.9,6.4,2.9,10.0] #init_V
-    init_V=Nor_vector(init_V)'''
     W_DV=np.zeros((8,13), dtype=np.float)
     W_DD=np.zeros((7,7), dtype=np.float)
     W_VA=np.zeros((13,6), dtype=np.float)
@@ -344,15 +276,7 @@ def main():
     final_result.sort()
     final_result.reverse()
     initial_vec=Nor_vector(initial_vec)
-    #W_DD=construct_matrix("toplogy.txt",19,19)
-    '''print(W_VD)
-    print(W_DV)'''
-    '''print(W_DD)
-    init_D=[float(1/134) for i in range(134)]
-    #r_V=Get_impscore("vulnerability-infor.xlsx")
-    init_V=[6.4,6.4,6.9,10.0,6.9,10.0,6.4,10.0,10.0,2.9,6.4,2.9,10.0]
-    #r_V=[float(1/37) for i in range(37)]
-    init_V=Nor_vector(init_V)'''
+    
     print('asdfasdfasdf')
     print(final_result)
     print('asdfasdfasdf')
